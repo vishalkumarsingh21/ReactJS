@@ -4,11 +4,13 @@ import { themeDataContext } from '../context/ThemeContext'
 
 const Button = () => {
 
-    const [theme, setTheme] = useContext(themeDataContext)
+    const { setTheme } = useContext(themeDataContext)
 
     const changeTheme = () => {
-        setTheme(prev => prev === 'light' ? 'dark' : 'light')
-        console.log('Theme is changed to', {theme})
+        setTheme(prev => {
+            return prev === 'light' ? 'dark' : 'light'
+        })
+        // console.log('Theme is changed to', {theme})
     }
 
     return (

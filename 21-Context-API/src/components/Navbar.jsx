@@ -10,7 +10,7 @@ const Navbar = () => {
     // const data = useContext(postDataContext)
     // console.log(data)
 
-    const [theme] = useContext(themeDataContext)
+    const {theme} = useContext(themeDataContext)
 
     return (
         <div className={theme}>

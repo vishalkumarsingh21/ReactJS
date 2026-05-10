@@ -4,7 +4,7 @@ import { themeDataContext } from '../context/ThemeContext';
 
 const Navbar2 = () => {
 
-    const [theme] = useContext(themeDataContext);
+    const {theme}= useContext(themeDataContext);
     // console.log(theme)
 
     return (

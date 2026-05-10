@@ -11,7 +11,7 @@ const ThemeContext = (props) => {
 
     return (
         <div>
-            <themeDataContext.Provider value={[theme, setTheme]}>
+            <themeDataContext.Provider value={{theme, setTheme}}>
                 {props.children}
             </themeDataContext.Provider>
         </div>
